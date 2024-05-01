@@ -64,9 +64,8 @@ ln -s ~/repos/nvim ~/.config/nvim
 - `b` - Balanced block (parentheses, brackets, braces)
 - `ib` - Inner balanced block (excluding surrounding whitespace)
 - `ab` - A balanced block (including surrounding whitespace)
-- `"` - Quotes (double quotes)
-- `'` - Quotes (single quotes)
-- ``` - Quotes (backticks)
+- `i"` - Inner quotes (double, single, and backticks)
+- `i{` - Inner blocks (Curly braces, parenthesis and brackets)
 - `t` - HTML/XML tag
 - `it` - Inner HTML/XML tag (excluding surrounding whitespace)
 - `at` - A HTML/XML tag (including surrounding whitespace)
