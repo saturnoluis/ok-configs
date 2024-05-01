@@ -48,8 +48,7 @@ ln -s ~/repos/nvim ~/.config/nvim
 
 - `:r` - Read from a source and add to current buffer.
 - `:term` - Open the terminal mode.
-- `Explore:` - Open the file explorer.
-- `` - 
+- `:Explore` - Open the file explorer.
 
 # Text Objects
 
