@@ -34,6 +34,14 @@ ln -s ~/repos/nvim ~/.config/nvim
 - `V` - Enter linewise visual mode.
 - `Ctrl-v` - Enter visual block mode. 
 
+### Useful commands
+
+- `:r` - Read from a source and add to current buffer.
+- `:e` - Open the given file in a new buffer.
+- `:enew` - Create a new buffer.
+- `:term` - Open the terminal mode.
+- `:Explore` - Open the file explorer.
+
 ### Text manipulation 
 
 - `s` - Substitute - Deletes the selection and enters insert mode.
@@ -44,30 +52,16 @@ ln -s ~/repos/nvim ~/.config/nvim
 - `P` - Paste before the cursor or above the line.
 - `p` - Paste after the cursor or below the line.
 
-### Useful commands
+### Motions
 
-- `:r` - Read from a source and add to current buffer.
-- `:term` - Open the terminal mode.
-- `:Explore` - Open the file explorer.
+- `t` - To (move cursor until character, excluding it)
+- `f` - Find (move cursor to character)
 
-# Text Objects
+### Delete content using text objects
 
-- `w` - Word
-- `iw` - Inner word (excluding surrounding whitespace)
-- `aw` - A word (including surrounding whitespace)
-- `s` - Sentence
-- `as` - A sentence (including surrounding whitespace)
-- `p` - Paragraph
-- `ip` - Inner paragraph (excluding surrounding whitespace)
-- `ap` - A paragraph (including surrounding whitespace)
-- `b` - Balanced block (parentheses, brackets, braces)
-- `ib` - Inner balanced block (excluding surrounding whitespace)
-- `ab` - A balanced block (including surrounding whitespace)
-- `i"` - Inner quotes (double, single, and backticks)
-- `i{` - Inner blocks (Curly braces, parenthesis and brackets)
-- `t` - HTML/XML tag
-- `it` - Inner HTML/XML tag (excluding surrounding whitespace)
-- `at` - A HTML/XML tag (including surrounding whitespace)
-- `l` - Line
-- `il` - Inner line (excluding leading and trailing whitespace)
-- `al` - A line (including leading and trailing whitespace)
+- `diw` - Inner word (excluding surrounding whitespace)
+- `dip` - Inner paragraph (excluding surrounding whitespace)
+- `di"` - Inner quotes (double, single, and backticks)
+- `di{` - Inner blocks (Curly braces, parenthesis and brackets)
+- `dit` - Inner HTML/XML tag (excluding surrounding whitespace)
+- `dil` - Inner line (excluding leading and trailing whitespace)
