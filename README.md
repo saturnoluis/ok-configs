@@ -48,4 +48,28 @@ ln -s ~/repos/nvim ~/.config/nvim
 
 - `:r` - Read from a source and add to current buffer.
 - `:term` - Open the terminal mode.
+- `Explore:` - Open the file explorer.
 - `` - 
+
+# Text Objects
+
+- `w` - Word
+- `iw` - Inner word (excluding surrounding whitespace)
+- `aw` - A word (including surrounding whitespace)
+- `s` - Sentence
+- `as` - A sentence (including surrounding whitespace)
+- `p` - Paragraph
+- `ip` - Inner paragraph (excluding surrounding whitespace)
+- `ap` - A paragraph (including surrounding whitespace)
+- `b` - Balanced block (parentheses, brackets, braces)
+- `ib` - Inner balanced block (excluding surrounding whitespace)
+- `ab` - A balanced block (including surrounding whitespace)
+- `"` - Quotes (double quotes)
+- `'` - Quotes (single quotes)
+- ``` - Quotes (backticks)
+- `t` - HTML/XML tag
+- `it` - Inner HTML/XML tag (excluding surrounding whitespace)
+- `at` - A HTML/XML tag (including surrounding whitespace)
+- `l` - Line
+- `il` - Inner line (excluding leading and trailing whitespace)
+- `al` - A line (including leading and trailing whitespace)
