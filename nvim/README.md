@@ -34,6 +34,12 @@ ln -s ~/repos/nvim ~/.config/nvim
 - `V` - Enter linewise visual mode.
 - `Ctrl-v` - Enter visual block mode. 
 
+### Split Windows
+
+- `:split` - Splits the current window horizontally
+- `:vsplit` - Splits the current window vertically
+- `Ctrl-w + h/j/k/l` - Change the current window
+
 ### Useful commands
 
 - `:r` - Read from a source and add to current buffer.
@@ -52,12 +58,17 @@ ln -s ~/repos/nvim ~/.config/nvim
 - `P` - Paste before the cursor or above the line.
 - `p` - Paste after the cursor or below the line.
 
+### Text objects commands
+
+- `d` - Delete.
+- `c` - Change - Delete and enter insert mode.
+
 ### Motions
 
 - `t` - To (move cursor until character, excluding it)
 - `f` - Find (move cursor to character)
 
-### Delete content using text objects
+**Examples (the same applies to all commands):**
 
 - `diw` - Inner word (excluding surrounding whitespace)
 - `dip` - Inner paragraph (excluding surrounding whitespace)
