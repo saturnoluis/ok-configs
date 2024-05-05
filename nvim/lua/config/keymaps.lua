@@ -5,9 +5,9 @@ vim.g.mapleader = ' '
 vim.keymap.set('', '<Space>', '<Nop>', {noremap = true, silent = true})
 
 -- Quick jump to start/end of line
-vim.keymap.set("n", "<leader>h", "<Home>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>l", "<End>", {noremap = true, silent = true})
-vim.keymap.set("v", "<leader>h", "<Home>", {noremap = true, silent = true})
-vim.keymap.set("v", "<leader>l", "<End>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>h", "<home>", {noremap = true, silent = true, desc = "Move cursor to the start of current line."})
+vim.keymap.set("n", "<leader>l", "<End>", {noremap = true, silent = true, desc = "Move cursor to the end of current line." })
+vim.keymap.set("v", "<leader>h", "<Home>", {noremap = true, silent = true, desc = "Select to the start of current line."})
+vim.keymap.set("v", "<leader>l", "<End>", {noremap = true, silent = true, desc = "Select to the end of current line." })
 
 -- 

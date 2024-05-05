@@ -47,6 +47,7 @@ ln -s ~/repos/nvim ~/.config/nvim
 - `:enew` - Create a new buffer.
 - `:term` - Open the terminal mode.
 - `:Explore` - Open the file explorer.
+- `:lua =` - Run a lua expression - i.e. :lua =print("hello")
 
 ### Text manipulation 
 
