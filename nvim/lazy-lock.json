@@ -1,4 +1,4 @@
 {
   "lazy.nvim": { "branch": "main", "commit": "d3974346b6cef2116c8e7b08423256a834cb7cbc" },
-  "oxocarbon.nvim": { "branch": "main", "commit": "c5846d10cbe4131cc5e32c6d00beaf59cb60f6a2" }
+  "newpaper.nvim": { "branch": "main", "commit": "0fff7080666aa41aa0e0b4e32db9788c396da479" }
 }
