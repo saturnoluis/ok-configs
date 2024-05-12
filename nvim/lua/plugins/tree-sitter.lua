@@ -18,7 +18,7 @@ return {
 			"python",
 			"scss",
 			"svelte",
-			"typescrypt",
+			"typescript",
 		},
 		highlight = {
 			enable = true,
