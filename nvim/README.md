@@ -2,10 +2,41 @@
 
 ## How to install
 
-- Use a script to install cargo, bob and neovim.
-- Make the symbolic link to make this repo the neovim config:
+There are several "official" ways to install neovim. The one I like the most
+and works for me is using the prebuild `tar` file for Linux. 
+
+The steps are described below, use the following link for more information:
+https://github.com/neovim/neovim/blob/master/INSTALL.md
+
 ```bash
-ln -s ~/repos/nvim ~/.config/nvim
+sudo rm -rf /opt/nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+```
+
+After this step, you should add the binary to your PATH. (This path is already
+present in the .zshrc file found in this repo).
+
+```bash
+export PATH="/opt/nvim-linux64/bin:$PATH"
+```
+
+Finally make a symbolic link to use this repo as the config folder for neovim:
+
+```bash
+ln -s ~/Repos/ok-configs/nvim ~/.config/nvim
+```
+
+## Required system dependencies for this neovim config
+
+```bash
+sudo dnf install curl -y
+sudo dnf install fd-find -y
+sudo dnf install git -y
+sudo dnf install nodejs
+sudo dnf install ripgrep -y
+sudo dnf install tree-sitter-cli
+sudo dnf install xclip -y
 ```
 
 ## What I like most about neovim

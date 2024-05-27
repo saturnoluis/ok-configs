@@ -46,6 +46,7 @@ export PATH="/home/luis/.cargo/bin:$PATH"
 export PATH="/home/luis/.local/share/bob/nvim-bin:$PATH"
 export PATH="/home/luis/.local/kitty.app/bin:$PATH"
 export PATH="/var/lib/flatpak/exports/bin:$PATH"
+export PATH="/opt/nvim-linux64/bin:$PATH"
 
 # My aliases
 # ******************************************
