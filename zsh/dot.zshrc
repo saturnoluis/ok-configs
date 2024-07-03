@@ -53,12 +53,7 @@ export PATH="/opt/nvim-linux64/bin:$PATH"
 alias hi="echo \"Hello! I'm $(hostname).\nHere's my IP: $(hostname -I | awk '{print $1}')\""
 alias home="clear && cd ~"
 alias open="xdg-open"
-alias phone="scrcpy --turn-screen-off --window-borderless"
-alias py="python"
 alias work="cd ~/repos && ssh -i ./Dev02DCConnectedSSHKey.pem azureuser@20.51.242.195 -L 5173:localhost:5173"
 
 # Prevent accidental removal
 alias rm="rm -i"
-
-# Flatpak aliases
-alias vscode="flatpak run com.visualstudio.code"
