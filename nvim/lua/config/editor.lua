@@ -9,3 +9,4 @@ vim.opt.softtabstop = 4
 vim.opt.tabstop = 4
 vim.opt.textwidth = 80
 
+vim.cmd.colorscheme "catppuccin"
