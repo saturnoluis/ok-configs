@@ -49,3 +49,11 @@ vim.keymap.set(
 	":Neotree reveal<CR>",
 	{ noremap = true, desc = "Reveal buffer in file explorer" }
 )
+
+-- Open Buffers in Neotree
+vim.keymap.set(
+	"n",
+	"<leader>b",
+	":Neotree buffers<CR>",
+	{ noremap = true, desc = "Show all opened buffers" }
+)
