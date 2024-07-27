@@ -1,3 +1,4 @@
+vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "+1"
 vim.opt.expandtab = false
 vim.opt.list = true

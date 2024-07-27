@@ -7,7 +7,9 @@ return {
 	opts = {
 		ensure_installed = {
 			"bash",
+			"c",
 			"css",
+			"go",
 			"html",
 			"javascript",
 			"jsdoc",
@@ -19,6 +21,8 @@ return {
 			"scss",
 			"svelte",
 			"typescript",
+			"vim",
+			"vimdoc",
 		},
 		highlight = {
 			enable = true,

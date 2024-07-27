@@ -30,6 +30,7 @@ ln -s ~/Repos/ok-configs/nvim ~/.config/nvim
 ## Required system dependencies for this neovim config
 
 ```bash
+## Fedora dnf commands
 sudo dnf install curl -y
 sudo dnf install fd-find -y
 sudo dnf install git -y
