@@ -17,6 +17,12 @@ vim.keymap.set("n", "<leader>l", "<End>", {
 	desc = "Move cursor to the end of current line."
 })
 
+vim.keymap.set("i", "<C-k>", "<CR><Esc>O", {
+	noremap = true,
+	silent = true,
+	desc = "Split current line and moves the cursor in between."
+})
+
 vim.keymap.set("v", "<leader>h", "<Home>", {
 	noremap = true,
 	silent = true,
@@ -57,3 +63,4 @@ vim.keymap.set(
 	":Neotree buffers<CR>",
 	{ noremap = true, desc = "Show all opened buffers" }
 )
+
