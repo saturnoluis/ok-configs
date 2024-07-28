@@ -13,5 +13,12 @@ return {
 				["<tab>"] = "open",
 			},
 		},
+		filesystem = {
+			filtered_items = {
+				hide_dotfiles = false,
+				hide_gitignored = false,
+				hide_hidden = false,
+			},
+		},
 	},
 }
