@@ -8,65 +8,63 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set("", "<Space>", "<Nop>", opts)
 
 -- Move cursor in NORMAL mode
-vim.keymap.set(
-	"n", "<leader>h", "<home>",
+vim.keymap.set("n", "<leader>h", "<home>",
     { desc = "Move cursor to the start of current line." }, opts
 )
-vim.keymap.set(
-	"n", "<leader>l", "<End>",
+vim.keymap.set("n", "<leader>l", "<End>",
     { desc = "Move cursor to the end of current line." }, opts
 )
 
 -- Select text in VISUAL mode
-vim.keymap.set(
-	"v", "<leader>h", "<Home>",
+vim.keymap.set("v", "<leader>h", "<Home>",
     { desc = "Select to the start of current line." }, opts
 )
-vim.keymap.set(
-	"v", "<leader>l", "<End>",
+vim.keymap.set("v", "<leader>l", "<End>",
     { desc = "Select to the end of current line." }, opts
 )
 
 -- Split current line in INSERT mode
-vim.keymap.set(
-	"i", "<C-k>", "<CR><Esc>O",
+vim.keymap.set("i", "<C-k>", "<CR><Esc>O",
     { desc = "Split current line and move cursor in between." }, opts
 )
 
--- LSP key-bindings
-vim.keymap.set(
-	"n", "<leader>fd", vim.lsp.buf.definition,
+-- LSP
+vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
     { desc = "Find symbol definition." }, opts
 )
-vim.keymap.set(
-	"n", "<leader>fi", vim.lsp.buf.implementation,
+vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
     { desc = "Find symbol implementation" }, opts
 )
 
--- Neotree key-bindings
-vim.keymap.set(
-	"n", "<leader>p", ":Neotree reveal<CR>",
+-- Neotree
+vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
     { desc = "Reveal bufin file explorer" }, opts
 )
-vim.keymap.set(
-	"n", "<leader>b", ":Neotree buffers<CR>",
+vim.keymap.set("n", "<leader>b", ":Neotree buffers<CR>",
     { desc = "Show all opened buffers" }, opts
 )
 
--- Move key-bindings
-vim.keymap.set(
-    "n", "<A-j>", ":MoveLine(1)<CR>",
+-- Move
+vim.keymap.set("n", "<A-j>", ":MoveLine(1)<CR>",
     { desc = "Move line down in normal mode." }, opts
 )
-vim.keymap.set(
-    "n", "<A-k>", ":MoveLine(-1)<CR>",
+vim.keymap.set("n", "<A-k>", ":MoveLine(-1)<CR>",
     { desc = "Move line up in normal mode." }, opts
 )
-vim.keymap.set(
-    "v", "<A-j>", ":MoveBlock(1)<CR>",
+vim.keymap.set("v", "<A-j>", ":MoveBlock(1)<CR>",
     { desc = "Move block down in visual mode." }, opts
 )
-vim.keymap.set(
-    "v", "<A-k>", ":MoveBlock(-1)<CR>",
+vim.keymap.set("v", "<A-k>", ":MoveBlock(-1)<CR>",
     { desc = "Move block up in visual mode." }, opts
+)
+
+-- Telescope
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>",
+	{ desc = "Find files by name." }, opts
+)
+vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>",
+	{ desc = "Find files using grep." }, opts
+)
+vim.keymap.set("n", "<leader>fr", ":Telescope oldfiles<CR>",
+	{ desc = "Find recently opened files." }, opts
 )
