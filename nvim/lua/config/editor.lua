@@ -12,4 +12,4 @@ vim.opt.termguicolors = true
 vim.opt.textwidth = 80
 vim.opt.wrap = false
 
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "onedark"

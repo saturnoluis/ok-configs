@@ -28,23 +28,15 @@ vim.keymap.set("i", "<C-k>", "<CR><Esc>O",
     { desc = "Split current line and move cursor in between." }, opts
 )
 
--- LSP
-vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
-    { desc = "Find symbol definition." }, opts
+-- Change buffers
+vim.keymap.set("n", "<leader>j", ":bprevious<CR>",
+    { desc = "Show previous buffer." }, opts
 )
-vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
-    { desc = "Find symbol implementation" }, opts
-)
-
--- Neotree
-vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
-    { desc = "Reveal bufin file explorer" }, opts
-)
-vim.keymap.set("n", "<leader>b", ":Neotree buffers<CR>",
-    { desc = "Show all opened buffers" }, opts
+vim.keymap.set("n", "<leader>k", ":bnext<CR>",
+    { desc = "Show next buffer." }, opts
 )
 
--- Move
+-- Move lines of code
 vim.keymap.set("n", "<A-j>", ":MoveLine(1)<CR>",
     { desc = "Move line down in normal mode." }, opts
 )
@@ -56,6 +48,22 @@ vim.keymap.set("v", "<A-j>", ":MoveBlock(1)<CR>",
 )
 vim.keymap.set("v", "<A-k>", ":MoveBlock(-1)<CR>",
     { desc = "Move block up in visual mode." }, opts
+)
+
+-- LSP
+vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
+    { desc = "Find symbol definition." }, opts
+)
+vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
+    { desc = "Find symbol implementation" }, opts
+)
+
+-- Neotree
+vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
+    { desc = "Show current buffer in file explorer" }, opts
+)
+vim.keymap.set("n", "<leader>b", ":Neotree buffers<CR>",
+    { desc = "Show all opened buffers" }, opts
 )
 
 -- Telescope
