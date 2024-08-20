@@ -1,5 +1,6 @@
 vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "+1"
+vim.opt.cursorline = true
 vim.opt.expandtab = false
 vim.opt.list = true
 vim.opt.number = true
