@@ -57,6 +57,9 @@ vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
 vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
     { desc = "Find symbol implementation" }, opts
 )
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename,
+	{ desc = "Rename symbol" }, opts
+)
 
 -- Neotree
 vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
