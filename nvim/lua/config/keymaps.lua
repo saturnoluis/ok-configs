@@ -55,11 +55,21 @@ vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition,
     { desc = "Find symbol definition." }, opts
 )
 vim.keymap.set("n", "<leader>fi", vim.lsp.buf.implementation,
-    { desc = "Find symbol implementation" }, opts
+    { desc = "Find symbol implementation." }, opts
 )
-vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename,
-	{ desc = "Rename symbol" }, opts
+vim.keymap.set("n", "<leader>fr", vim.lsp.buf.references,
+    { desc = "Find symbol references." }, opts
 )
+vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename,
+	{ desc = "Rename symbol." }, opts
+)
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action,
+	{ desc = "Show code actions." }, opts
+)
+vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
+	{ desc = "Show code documentation." }, opts
+)
+
 
 -- Neotree
 vim.keymap.set("n", "<leader>p", ":Neotree reveal<CR>",
@@ -76,6 +86,6 @@ vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>",
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>",
 	{ desc = "Find files using grep." }, opts
 )
-vim.keymap.set("n", "<leader>fr", ":Telescope oldfiles<CR>",
+vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<CR>",
 	{ desc = "Find recently opened files." }, opts
 )
