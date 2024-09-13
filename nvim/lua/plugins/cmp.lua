@@ -1,5 +1,5 @@
 -- A completion engine plugin for neovim written in Lua.
--- https://github.com/knubie/nvim-cmp
+-- https://github.com/hrsh7th/nvim-cmp
 -- https://www.youtube.com/watch?v=rawagL94jko
 return {
 	'hrsh7th/nvim-cmp',
