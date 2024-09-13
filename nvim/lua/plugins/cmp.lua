@@ -5,11 +5,12 @@ return {
 	'hrsh7th/nvim-cmp',
 	dependencies = {
 		'hrsh7th/cmp-buffer',
-		'hrsh7th/cmp-path',
-		'hrsh7th/cmp-nvim-lsp',
 		'hrsh7th/cmp-cmdline',
 		'hrsh7th/cmp-git',
-		'L3MON4D3/LuaSnip',
+		'hrsh7th/cmp-nvim-lsp',
+		'hrsh7th/cmp-path',
+		'hrsh7th/cmp-vsnip',
+		'hrsh7th/vim-vsnip',
 	},
 	event = 'VeryLazy',
 	main = 'config.plugins.cmp',
@@ -18,8 +19,8 @@ return {
 
 		cmp.setup({
 			snippet = {
-				expend = function (args)
-					require('luasnip').lsp_expand(args.body)
+				expand = function(args)
+					vim.fn["vsnip#anonymous"](args.body)
 				end,
 			},
 			mapping = cmp.mapping.preset.insert({
@@ -29,14 +30,14 @@ return {
 				['<C-e>'] = cmp.mapping.abort(),
 				['<Tab>'] = cmp.mapping.confirm({ select = true }),
 			}),
-			sources = {
-				{ name = "nvim_lsp" },
+			sources = cmp.config.sources({
+				{ name = 'nvim_lsp' },
+				{ name = 'vsnip' },
+			}, {
+				{ name = 'buffer' },
 				{ name = "path" },
-				{ name = "luasnip" },
-				{ name = "buffer" },
-			},
+			}),
 		})
-
 		-- Set configuration for specific filetype.
 		cmp.setup.filetype('gitcommit', {
 			sources = cmp.config.sources(
