@@ -1,10 +1,12 @@
 return {
 	"neovim/nvim-lspconfig",
+
 	dependencies = {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"folke/neodev.nvim",
 	},
+
 	config = function()
 		require("mason-lspconfig").setup {
 		    ensure_installed = {
@@ -17,7 +19,7 @@ return {
 				"pylsp",
 				"somesass_ls",
 				"svelte",
-				"tsserver",
+				"ts_ls",
 			},
 		}
 
@@ -40,6 +42,6 @@ return {
 		require("lspconfig").pylsp.setup({})
 		require("lspconfig").somesass_ls.setup({})
 		require("lspconfig").svelte.setup({})
-		require("lspconfig").tsserver.setup({})
+		require("lspconfig").ts_ls.setup({})
 	end
 }
